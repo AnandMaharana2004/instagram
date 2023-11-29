@@ -606,7 +606,7 @@
 // using namespace std;
 // double area(int r);
 // double area(int height,int width);
-// double area(int bass, int height2);
+// double area(float pi ,int bass, int height2);
 
 // int main(){
 //     int redius,width,height,bass,height2;
@@ -631,12 +631,43 @@
 //     return height*width;
 
 // }
-// double area(int bass ,int height2){
-//     return 0.5*(bass*height2);
+// double area(float pi,int bass ,int height2){
+//     pi= 0.5;
+//     return *pi(bass*height2);
 // }
 
 # include<iostream>
+# include<math.h>
 using namespace std;
+double area(int r);
+double area(int height , int width);
+double area(int a,int b,int c);
 int main(){
-    cout<<"this is anand maharana"<<endl;
+    int redius , height, width, a,b,c;
+    cout<<"Enter the redius of the circle : ";
+    cin>>redius;
+    cout<<"Enter the height and width of the rectangle : ";
+    cin>>height>>width;
+    cout<<"Enter the all the arm of the triangle : ";
+    cin>>a>>b>>c;
+    double areaOfcircle = area(redius);
+    double areaOfrectangle = area(height,width);
+    double areaOftriengle = area(a,b,c);
+    cout<<"the aree of the circle is : "<<areaOfcircle<<endl;
+    cout<<"the area of hte rectangle is : "<<areaOfrectangle<<endl;
+    cout<<"the area of tirangle is : "<<areaOftriengle<<endl;
+
+}
+double area(int r){
+    return 3.14*r;
+}
+double area(int height , int width){
+    return height*width;
+}
+double area(int a,int b,int c){
+    int s= (a+b+c)/2;
+    int ar = s*(s-a)*(s-b)*(s-c);
+    int properArea = sqrt(ar);
+    return properArea;
+
 }
