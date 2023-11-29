@@ -602,35 +602,41 @@
 // }
 
 
+// # include<iostream>
+// using namespace std;
+// double area(int r);
+// double area(int height,int width);
+// double area(int bass, int height2);
+
+// int main(){
+//     int redius,width,height,bass,height2;
+//     cout << "Enter the radius of the circle: ";
+//     cin>>redius;
+//     cout<<"Enter the height and width of the rectangle: ";
+//     cin>>height>>width;
+//     cout<<"Enter the bass and height of the triangle: ";
+//     cin>>bass>>height2;
+//     double areaofcircle = area(redius);
+//     cout<<"the area of circle is : "<<areaofcircle<<endl;
+//     double areaofrectangle = area(width , height);
+//     cout<<"the area of rectangle is : "<<areaofrectangle<<endl;
+//     double areaoftriangle = area(bass,height2);
+//     cout<<"the area of triangle is : "<<areaoftriangle<<endl;
+
+// }
+// double area(int r){
+//     return 3.14*r;
+// }
+// double area(int height ,int width){
+//     return height*width;
+
+// }
+// double area(int bass ,int height2){
+//     return 0.5*(bass*height2);
+// }
+
 # include<iostream>
 using namespace std;
-double area(int r);
-double area(int height,int width);
-double area(int bass, int height2);
-
 int main(){
-    int redius,width,height,bass,height2;
-    cout << "Enter the radius of the circle: ";
-    cin>>redius;
-    cout<<"Enter the height and width of the rectangle: ";
-    cin>>height>>width;
-    cout<<"Enter the bass and height of the triangle: ";
-    cin>>bass>>height2;
-    double areaofcircle = area(redius);
-    cout<<"the area of circle is : "<<areaofcircle<<endl;
-    double areaofrectangle = area(width , height);
-    cout<<"the area of rectangle is : "<<areaofrectangle<<endl;
-    double areaoftriangle = area(bass,height2);
-    cout<<"the area of triangle is : "<<areaoftriangle<<endl;
-
-}
-double area(int r){
-    return 3.14*r;
-}
-double area(int height ,int width){
-    return height*width;
-
-}
-double area(int bass ,int height2){
-    return 0.5*(bass*height2);
+    cout<<"this is anand maharana"<<endl;
 }
